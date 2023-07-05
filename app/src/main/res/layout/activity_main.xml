@@ -1,18 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<LinearLayout
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="20dp"
+        tools:context=".MainActivity"
+        android:orientation="vertical">
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
     <TextView
+            android:id="@+id/text_title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Hello World!"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"/>
+            android:textSize="24sp"
+            android:text="basic dialog"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <Button
+            android:id="@+id/btn_dialog_basic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="일반 다이얼로그"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <Button
+            android:id="@+id/btn_dialog_select"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택 다이얼로그"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <Button
+            android:id="@+id/btn_dialog_input"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인풋 다이얼로그"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <Button
+            android:id="@+id/btn_dialog_list"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="목록 다이얼로그"/>
+
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="20dp"/>
+
+    <Button
+            android:id="@+id/btn_dialog_flex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="격자 다이얼로그"/>
+
+</LinearLayout>
